@@ -1,0 +1,31 @@
+workflow: plasare comanda
+
+Comanda:
+
+introducere date client/produs -> validare comanda -> primim un numar de comanda
+
+date client:
+- id generat automat?
+- nume
+- adresa
+- numar telefon
+- email
+- modalitate plata
+
+date produs:
+- cod produs
+- denumire produs
+- pret
+- cantitate
+
+
+Facturare:
+
+utilizam datele existente in baza de date(datele clientului, produsului si numarul comenzii) -> validare factura -> primim un id de factura,
+iar id-ului de factura ii este adaugat datele clientului(nume, adresa, numar de telefon) alaturi de datele produsului (cod produs, pret, cantitate)
+
+
+Expediere:
+
+utilizam datele existente in baza de date pentru facturare(id-ul comenzii alturi de datele specifice) -> validare expediere -> primim un timp estimativ
+de livrare si un mesaj care sa ateste confirmarea livrarii
